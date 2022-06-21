@@ -1,8 +1,9 @@
-body{
-    background-color: blue;
 
-}
-.Nani{
-    color: pink;
-    align-content: center;
+.Headings{
+    color: green;
+    background-color: blue;
+    font-family:'Times New Roman';
+    font-size: 44px;
+    font-style:italic;
+    font-weight:bold;
 }
