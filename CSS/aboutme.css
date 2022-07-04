@@ -1,0 +1,180 @@
+*{
+    margin:0px;
+    padding:0px;
+    color:aliceblue;
+
+}
+@font-face {
+    font-family: mentions;
+    src: url(../../../../../Fonts/Exo2/Exo2-Italic-VariableFont_wght.ttf);
+}
+#full{
+    position:relative;
+    height:270vh;
+    
+}
+body{
+    background-color: black;
+    box-sizing: border-box;
+}
+#face{
+    position:absolute;
+    left:50%;
+    top:0%;
+    transform: translate(-50%);
+    height:250px;
+    width:250px;
+    object-fit: cover;
+    clip-path: circle(50.0% at 50% 50%);
+    z-index: 1;
+}
+.top{
+    position:absolute;
+    top:27vh;
+    left:50%;
+    transform:translate(-50%);
+    z-index:1;
+}
+#attherate{
+    width:auto;
+    padding:10px;
+    background-color: rgb(255, 153, 0);
+    border-radius:50px;
+    font-family:mentions;
+    font-weight:bold;
+}
+.top{
+    width:max-content;
+    margin:auto;
+    text-align: center;
+}
+.aboutme{
+    position:absolute;
+    left:5%;
+    top:65vh;
+    margin:auto;
+    width:500px;
+    text-align:center;
+    padding-left:5%;
+}
+.me{
+    width:500px;
+    height:350px;
+    border:5px solid hotpink;
+    top:65vh;
+    position:absolute;
+    right:5%;
+
+}
+.skills{
+    position:absolute;
+    top:110vh;
+    width:370px;
+    right:5%;
+    text-align:center;
+    padding:5%;
+}
+#bs{
+    position:absolute;
+    top:115vh;
+    height:275px;
+    left:150px;
+    vertical-align: middle; 
+    object-fit: contain;
+}
+span[class=items]{
+    border: 2px solid violet;
+    padding:8px;
+    border-radius: 50px;
+    background-color: green;
+
+}
+p,q{
+    font-size:x-large;
+    line-height: 200%;
+}
+.lmao{
+    position:absolute;
+    top:200vh;
+    left:50%;
+    transform:translate(-50%);
+    width:50vw;
+    padding:20px;
+    border-width: 3px;
+    border-style:solid;
+    border-color:rgb(242, 1, 1);
+    font-family:cursive;    
+    border-radius:50px 50px 20px 20px;
+    z-index:2;
+    color:steelblue;
+}
+
+input,fieldset,label{
+    font-size:large;
+    border-radius:20px;
+    padding-left: 15px;
+    padding-right:15px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    color:steelblue;
+}
+textarea{
+    font-size:large;
+    border-radius:20px;
+    padding-left: 15px;
+    padding-right:15px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    width:95%;
+    color:steelblue;
+}
+
+#submit{
+    width:100%;
+    background-color:rgb(60, 88, 188);
+}
+.contact{
+    text-align: center;
+    position: relative;
+    top:170vh;
+    padding:20px;
+    box-sizing: content-box;
+    z-index: 1; 
+}
+.contact img{
+    padding:3%;
+    vertical-align: middle;
+}
+.contact span:hover{
+    cursor:pointer;
+}
+.contact img:hover{
+    opacity:0.5;
+}
+
+nav{
+    width:100%;
+    background-color: black;
+    color:white;
+    position:absolute;
+    bottom:0;
+    text-align: center;
+}
+nav{
+    color:white;
+}
+nav a{
+    padding-left: 5%;
+    
+}
+
+
+/* Particle JS */
+#particles-js {
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0%;
+    z-index: 0;
+    opacity:1;
+}
