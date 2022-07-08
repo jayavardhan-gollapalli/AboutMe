@@ -8,63 +8,75 @@
     <link rel="stylesheet" href="CSS/aboutme.css">
 </head>
 <body>
-    <div id="full">
-    <img id="face" src="Images/Face.jpeg">
-    
-    <div class="top">
-        <h4 id="attherate">JAYAVARDHAN GOLLAPALLI</h4>
-        <q>Give me some sunshine,<br>
-        Give me some rain,<br>
-        Give me another chance,<br>
-        I'm gonna blow it once again
-        </q>
-        <br>
-        ~Engineer
-    </div>
-    <div>
-        <div class="aboutme"><h1>About Me</h1>
-            <p>I am an engineer eager to learn and try new things, curious about the scenes behind the rapid advancement of cyber world like web applications, softwares, OS's and also their loopholes.</p>
+    <div class="full">
+        <div class="top mid">
+            <img id="face" src="Images/Face.jpeg">
+            <h4 id="attherate">JAYAVARDHAN GOLLAPALLI</h4>
+            <q>Give me some sunshine,<br>
+            Give me some rain,<br>
+            Give me another chance,<br>
+            I'm gonna blow it once again
+            </q>
+            <br>
+            ~Engineer
         </div>
+        <div class="left about"><h1>About Me</h1>
+            <p>I am an engineer eager to learn and try new things, curious about the scenes behind the rapid advancement of cyber world such as web applications, softwares, OS's and also their disadvantages and loopholes.</p>
+        </div>
+        <img class="right" src="Images/nani.jpg">
+        <div class="right skills">
+            <h1>Skills</h1>
+            <p>
+                <span class=items>C++</h5></span>
+                <span class=items>Data Structures</h5></span>
+                <span class=items>Algorithms</h5></span>
+                <span class=items>Python</h5></span>
+                <span class=items>Go</h5></span>
+                <span class=items>CSS</h5></span>
+                <span class=items>Basic Unix</h5></span>
+                <span class=items>Basics Of Networking</h5></span>
+            </p>
+        </div>
+        <img class="left" src="Images/computer.png">
+        <div class="left">
+        <h2 style="text-align:center">Send me an anonymous message</h2>
+        <form>
+
+            <!-- Name <input type="text" placeholder="optional"><br> -->
+            Message<br> <textarea rows=12 name="message" placeholder="Type your message..."></textarea>
+            <input type="submit" id="sub" value="Send"> 
+        </form>
+        <script>let form=document.querySelector("form");
+            form.addEventListener('submit', (e)=>{e.preventDefault();
+            document.querySelector("#sub").value="Submitting";
+            let data= new FormData(form);
+            fetch('https://script.google.com/macros/s/AKfycbzp6NWQX__641GUsKiAyIwVDs8fHfiXbR6VGtind-rFCN21zEb5FBi3Wp5IbFsLu6db/exec', {method:"POST",body:data})
+            .then(res=>res.text)
+            .then(data=>{document.querySelector("#sub").value="Message sent";
+            });
+        })
+        </script>
+        </div>
+        <div class="right contact">
+            <h3>Or you know<br></h3>
+            <h2 style="text-align:center; ">Just Contact me</h2>
+            <a href="https://www.linkedin.com/in/jayavardhan-g-643514214"><img src="Images/linkedin.png" ></a><p>Jayavardhan G</p>
+            <a href="https://www.instagram.com/jayavardhan_nani/"><img src="Images/instagram.png" ></a><p>jayavardhan_nani</p>
+            <a href="https://www.facebook.com/Jayavardhan.Gollapalli/"><img src="Images/facebook.png" ></a><p>Jayavardhan.Gollapalli</p>
+            <a href="https://t.me/g_jayavardhan"><img src="Images/telegram.png" ></a><p>g_jayavardhan</p>
+        </div>
+        
+        
     </div>
-    <div class="me"></div>
-    <div class="skills">
-        <h1>Skills</h1>
-        <p>
-            <span class=items>C++</span>
-            <span class=items>Data Structures</span>
-            <span class=items>Algorithms</span>
-            <span class=items>Python</span>
-            <span class=items>Go</span>
-            <span class=items>CSS</span>
-            <span class=items>Basic Unix</span>
-            <span class=items>Basics Of Networking</span>
-        </p>
-    </div>
-    <img id ="bs" src="Images/computer.png" alt="computer">
-    <div class="lmao">
-    <form action="">
-        Name <input type="text" placeholder="optional"><br>
-        Type of message <input type="radio">
-        Message<br> <textarea rows="20" cols="50" placeholder="Type your message..."></textarea>
-    </form>
-    </div>
-    <div class="contact">
-        <h1 style="text-align:center; ">Contact me</h1>
-        <a href="https://www.linkedin.com/in/jayavardhan-g-643514214"><img src="Images/linkedin.png" width="30px" ></a>Jayavardhan G
-        <a href="https://www.instagram.com/jayavardhan_nani/"><img src="Images/instagram.png" width="30px" ></a>jayavardhan_nani
-        <a href="https://www.facebook.com/Jayavardhan.Gollapalli/"><img src="Images/facebook.png" width="30px" ></a>Jayavardhan.Gollapalli
-        <a href="https://t.me/g_jayavardhan"><img src="Images/telegram.png" width="30px" ></a>g_jayavardhan
-        <br> OR<br> JUST SEND ME A ANONYMOUS MESSAGE<br>
-    </div>
-    <nav>
+    <div class="foot">
         <a href="">About Me</a>
         <a href="">Recommended Songs</a>
         <a href="">Recommended Series, Movies, Animes</a>
         <a href="">Recommended Softwares</a>
-    </nav>
     </div>
     <div id="particles-js"></div>
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
+    
 </body>
 </html>
