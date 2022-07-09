@@ -1,3 +1,8 @@
+@font-face {
+    font-family:"cursive";
+    src: url(../../Fonts/EduVICWANTBeginner-VariableFont_wght.ttf);
+}
+
 @media (min-width:1305px){
     .left{
         z-index:1;
@@ -124,6 +129,7 @@
         overflow:auto;
     }
     body{
+        font-family: cursive;
         color:aliceblue;
         margin:0;
         background-color: black;
@@ -266,6 +272,7 @@
         overflow:auto;
     }
     body{
+        font-family: cursive;
         color:aliceblue;
         margin:0;
         background-color: black;
@@ -405,6 +412,7 @@
         overflow:auto;
     }
     body{
+        font-family: cursive;
         color:aliceblue;
         margin:0;
         background-color: black;
@@ -527,6 +535,7 @@
         overflow:auto;
     }
     body{
+        font-family: cursive;
         color:aliceblue;
         margin:0;
         background-color: black;
@@ -653,6 +662,7 @@
         overflow:auto;
     }
     body{
+        font-family: cursive;
         color:aliceblue;
         margin:0;
         background-color: black;
@@ -777,6 +787,7 @@
         overflow:auto;
     }
     body{
+        font-family: cursive;
         color:aliceblue;
         margin:0;
         background-color: black;
